@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package ec.edu.espol.tarea1;
-
-/**
- *
- * @author Lernovo
- */
 public class Soporte {
+    public boolean resolverIncidente(Usuario usuario) {
+        // Lógica mínima
+        return true;
+    }
+
+    public boolean derivarProblema(Administrador administrador) {
+        // Lógica mínima
+        return true;
+    }
     
 }
