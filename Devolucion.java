@@ -1,5 +1,3 @@
-package ec.edu.espol.tarea1;
-
 public class Devolucion {
     private Evento evento;
     private Cobro orden;
