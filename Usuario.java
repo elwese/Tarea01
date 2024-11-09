@@ -1,5 +1,3 @@
-package ec.edu.espol.tarea1;
-
 public class Usuario {
     private String nombre;
     private String apellido;
