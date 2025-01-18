@@ -9,5 +9,5 @@ public class Cobro {
         //logica de seleccion de medio
         return new MedioTarjeta();
     
-    };
+    }
 }
