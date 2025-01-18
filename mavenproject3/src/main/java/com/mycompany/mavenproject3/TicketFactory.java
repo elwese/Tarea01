@@ -9,5 +9,5 @@ package com.mycompany.mavenproject3;
  * @author Cesar
  */
 public abstract class TicketFactory {
-    public abstract Ticket crearTicket();
+    public abstract Ticket crearTicket(Estado estado, String asiento, Usuario dueño, Evento evento, String beneficios);
 }
