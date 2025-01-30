@@ -1,23 +1,25 @@
-
 package com.mycompany.mavenproject3;
 
+import java.util.ArrayList;
 import java.util.List;
 
-
 public class Cliente extends Usuario{
-    public List<Evento> buscarPorFecha(String fecha){
-        return null;
+    private List<Ticket> ticketsReservados;
+
+    public Cliente(String nombre, String apellido, String usuario, String contraseña) {
+        super(nombre, apellido, usuario, contraseña);
+        this.ticketsReservados = new ArrayList<>();
     }
-    public List<Evento> buscarPorArtista(String fecha){
-        return null;
+
+    public Cliente() {
     }
-    public List<Evento> buscarPorLugar(String fecha){
-        return null;
+    
+    public List<Ticket> getTicketsReservados() {
+        return ticketsReservados;
     }
-    public List<Evento> buscarPorTipoMusica(String fecha){
-        return null;
+
+    public void agregarTicket(Ticket ticket) {
+        ticketsReservados.add(ticket);
     }
-    public boolean reservarTicket(int cantidad, Ticket tipoTicket, Evento evento){
-        return true;
-    }
+    
 }
