@@ -1,17 +1,13 @@
-
 package com.mycompany.mavenproject3;
 
-
-public class MedioTarjeta implements MedioPago{
-    private String numeroTarjeta;
-
-    public MedioTarjeta(String numeroTarjeta) {
-        this.numeroTarjeta = numeroTarjeta;
+public class MedioTarjeta extends MedioPagoBase implements MedioPago {
+    public MedioTarjeta(String numeroTelf) {
+        super(numeroTelf);
     }
 
     @Override
     public boolean realizarPago(double monto) {
-        System.out.println("Pago de $" + monto + " realizado con tarjeta de crédito: " + numeroTarjeta);
+        System.out.println("Pago de $" + monto + " realizado con tarjeta de crédito: " + identificador);
         return true;
     }
 }
