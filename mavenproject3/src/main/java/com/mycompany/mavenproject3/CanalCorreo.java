@@ -1,13 +1,22 @@
+package com.mycompany.mavenproject3;
 
 package com.mycompany.mavenproject3;
 
-
 public class CanalCorreo extends CanalBase{
-    String direccion;
+    private String direccion;
     
     @Override
     public boolean enviarNotificacion() {
-        //enviar por correo
+        System.out.println("Enviando notificacion por Correo.....");
         return true;
     }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+    
 }
