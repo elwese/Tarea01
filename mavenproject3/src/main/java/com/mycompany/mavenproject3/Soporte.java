@@ -1,8 +1,12 @@
-
 package com.mycompany.mavenproject3;
 
+public Soporte(String nombre, String apellido, String usuario, String contraseña) {
+        super(nombre, apellido, usuario, contraseña);
+    }
 
-public class Soporte extends Usuario{
+    public Soporte() {
+    }
+    
     public boolean resolverIncidente(Usuario usuario){
         return true;
     }
