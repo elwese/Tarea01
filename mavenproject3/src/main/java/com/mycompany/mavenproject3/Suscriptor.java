@@ -1,4 +1,3 @@
-
 package com.mycompany.mavenproject3;
 
 public interface Suscriptor {
